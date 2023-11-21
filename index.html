@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>АгроТехСервис</title>
+    <link rel="stylesheet" href="./css/nullstyle.css" />
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <section class="container header__content">
+        <section class="header__logo">
+          <img src="./img/logo/Logo.png" alt="" width="120px" />
+          <p>АгроТехСервис</p>
+        </section>
+        <nav class="nav-line header__nav center">
+          <ul>
+            <li><a href="#">Главная</a></li>
+            <li><a href="about_us.html">О сайте</a></li>
+            <li><a href="#">Контакты</a></li>
+          </ul>
+        </nav>
+        <section class="user__zone center">
+          <img src="./img/other/userLogOut.png" alt="" width="50px" />
+          <img src="" alt="" class="none" />
+          <section data-userStatus="logIn" class="user__account none"></section>
+          <section data-userStatus="LogOut" class="user__enter">
+            <p>
+              <span data-userEnter>Войти/ Регистрация</span>
+            </p>
+          </section>
+        </section>
+        <img src="./img/other/burger_menu.png" alt="" class="burger__img none">
+      </section>
+      <nav data-burger class="burger__menu none">
+        <ul>
+          <li><a href="#">Главная</a></li>
+          <li><a href="#">О сайте</a></li>
+          <li><a href="#">Контакты</a></li>
+          <li><a href="#" data-userEnter>Войти/ Регистрация</a></li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section class="main__info">
+        <section class="container main__container">
+          <h2 class="info__title title">
+            Удобный поиск запчастей для
+            <span class="orange">сельскохозяйственной</span> и прочей техники
+          </h2>
+          <article class="info__text text">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Obcaecati,
+            debitis porro id eum officia ad illo suscipit ab adipisci minima
+            enim. Iure delectus, alias maiores earum harum assumenda quas
+            praesentium?
+          </article>
+          <p class="search__title title">Глобальный поиск</p>
+          <section class="search" data-search>
+            <input
+              type="text"
+              data-searchInput
+              placeholder="Введите название запчасти"
+            />
+            <button type="submit" data-searchSubmit>Поиск</button>
+          </section>
+        </section>
+      </section>
+      
+    </main>
+    <footer class="center" style="min-height: 50px">ООО"АгроТехСервис"</footer>
+    <script src="./js/burger.js"></script>
+  </body>
+</html>
